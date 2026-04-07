@@ -1,0 +1,18 @@
+[project]
+name = "customer-support-env"
+version = "0.1.0"
+description = "AI Customer Support Triage and Resolution Environment"
+authors = [
+    {name = "Arnov Majumder"}
+]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "requests",
+    "groq"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
