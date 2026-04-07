@@ -5,13 +5,18 @@ description = "AI Customer Support Triage and Resolution Environment"
 authors = [
     {name = "Arnov Majumder"}
 ]
+
 dependencies = [
     "fastapi",
     "uvicorn",
     "pydantic",
     "requests",
-    "groq"
+    "groq",
+    "openenv-core>=0.2.0"
 ]
+
+[project.scripts]
+server = "server.app:app"
 
 [build-system]
 requires = ["setuptools", "wheel"]
