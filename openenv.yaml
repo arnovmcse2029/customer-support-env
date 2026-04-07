@@ -1,0 +1,18 @@
+name: customer-support-env
+description: AI customer support triage and resolution environment
+
+version: "1.0"
+
+endpoints:
+  reset: /reset
+  step: /step
+  state: /state
+
+metadata:
+  author: Arnov Majumder
+  domain: customer-support
+  difficulty: medium
+
+environment:
+  type: multi-step
+  reward_range: [0, 1]
